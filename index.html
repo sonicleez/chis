@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Morgan — Video Editor & Colorist</title>
+  <meta name="description" content="Alex Morgan — Award-winning video editor and colorist specializing in narrative film, commercials, and music videos. Available for projects worldwide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo" id="nav-logo">AM</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#work" class="nav-link" id="link-work">Work</a></li>
+      <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+      <li><a href="#services" class="nav-link" id="link-services">Services</a></li>
+      <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#work" class="mobile-link" id="m-link-work">Work</a></li>
+      <li><a href="#about" class="mobile-link" id="m-link-about">About</a></li>
+      <li><a href="#services" class="mobile-link" id="m-link-services">Services</a></li>
+      <li><a href="#contact" class="mobile-link" id="m-link-contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal" id="hero-badge">
+        <span class="badge-dot"></span>
+        Available for projects
+      </div>
+      <h1 class="hero-title reveal" id="hero-title">
+        Crafting Stories<br />
+        <em>Through the Frame</em>
+      </h1>
+      <p class="hero-sub reveal" id="hero-sub">
+        Video Editor &amp; Colorist — Narrative · Commercial · Music Video
+      </p>
+      <a href="#work" class="hero-cta reveal" id="hero-cta">View Work</a>
+    </div>
+    <div class="hero-scroll reveal" id="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Showreel -->
+  <section class="showreel" id="showreel">
+    <div class="container">
+      <div class="section-label reveal">Showreel 2024</div>
+      <div class="video-frame reveal" id="video-frame">
+        <div class="video-placeholder" id="video-placeholder">
+          <div class="play-btn" id="play-btn">
+            <svg viewBox="0 0 24 24" fill="none">
+              <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="video-label">Watch Showreel</span>
+        </div>
+        <!-- Replace src with actual YouTube embed URL -->
+        <iframe
+          id="showreel-iframe"
+          src=""
+          data-src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          style="display:none;"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Works -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Selected Works</div>
+        <h2 class="section-title">Recent Projects</h2>
+      </div>
+
+      <div class="work-grid" id="work-grid">
+
+        <article class="work-item reveal" id="work-1">
+          <a href="#" class="work-link">
+            <div class="work-img-wrap">
+              <img src="assets/project-1.png" alt="Narrative Film 2024" class="work-img" loading="lazy" />
+              <div class="work-overlay">
+                <span class="work-year">2024</span>
+                <span class="work-type">Narrative</span>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3 class="work-name">Into the Stillness</h3>
+              <span class="work-cat">Narrative Film</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-item reveal" id="work-2">
+          <a href="#" class="work-link">
+            <div class="work-img-wrap">
+              <img src="assets/project-2.png" alt="Commercial 2024" class="work-img" loading="lazy" />
+              <div class="work-overlay">
+                <span class="work-year">2024</span>
+                <span class="work-type">Commercial</span>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3 class="work-name">Aethelgard — Campaign</h3>
+              <span class="work-cat">Commercial</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-item reveal" id="work-3">
+          <a href="#" class="work-link">
+            <div class="work-img-wrap">
+              <img src="assets/project-3.png" alt="Music Video 2023" class="work-img" loading="lazy" />
+              <div class="work-overlay">
+                <span class="work-year">2023</span>
+                <span class="work-type">Music Video</span>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3 class="work-name">Neon Pulse</h3>
+              <span class="work-cat">Music Video</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-item reveal" id="work-4">
+          <a href="#" class="work-link">
+            <div class="work-img-wrap">
+              <img src="assets/project-4.png" alt="Documentary 2023" class="work-img" loading="lazy" />
+              <div class="work-overlay">
+                <span class="work-year">2023</span>
+                <span class="work-type">Documentary</span>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3 class="work-name">Horizon Walker</h3>
+              <span class="work-cat">Documentary</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-item reveal" id="work-5">
+          <a href="#" class="work-link">
+            <div class="work-img-wrap">
+              <img src="assets/project-5.png" alt="Fashion Film 2024" class="work-img" loading="lazy" />
+              <div class="work-overlay">
+                <span class="work-year">2024</span>
+                <span class="work-type">Fashion</span>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3 class="work-name">Monochrome</h3>
+              <span class="work-cat">Fashion Film</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-item reveal" id="work-6">
+          <a href="#" class="work-link">
+            <div class="work-img-wrap">
+              <img src="assets/project-6.png" alt="Short Film 2022" class="work-img" loading="lazy" />
+              <div class="work-overlay">
+                <span class="work-year">2022</span>
+                <span class="work-type">Short Film</span>
+              </div>
+            </div>
+            <div class="work-info">
+              <h3 class="work-name">Between Words</h3>
+              <span class="work-cat">Short Film</span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-img-col reveal" id="about-img-col">
+        <div class="about-img-wrap">
+          <img src="assets/portrait.png" alt="Alex Morgan in the edit suite" class="about-img" loading="lazy" />
+        </div>
+        <div class="about-credit">© Studio, Los Angeles</div>
+      </div>
+      <div class="about-text-col reveal" id="about-text-col">
+        <div class="section-label">About</div>
+        <h2 class="section-title">The Edit is Where<br /><em>The Story Lives</em></h2>
+        <p class="about-body">
+          I'm Alex Morgan — a video editor and colorist with over 8 years of experience 
+          shaping narratives for film, brand, and music. Based in Los Angeles, 
+          I collaborate with directors and agencies worldwide to bring raw footage 
+          to its fullest emotional potential.
+        </p>
+        <p class="about-body">
+          My approach is rooted in restraint — every cut, every color decision exists 
+          to serve the story, not showcase technique.
+        </p>
+        <div class="about-tools">
+          <div class="tool-label">Tools</div>
+          <div class="tool-list">
+            <span>Premiere Pro</span>
+            <span>DaVinci Resolve</span>
+            <span>After Effects</span>
+            <span>Final Cut Pro</span>
+            <span>Nuke</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Expertise</div>
+        <h2 class="section-title">What I Do</h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal" id="service-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="4" y="10" width="40" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M18 18l12 6-12 6V18z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Video Editing</h3>
+          <p class="service-desc">From assembly cut to picture lock. Narrative, documentary, commercial, and music video editing with precise rhythm and pacing.</p>
+        </div>
+
+        <div class="service-card reveal" id="service-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 10v4M24 34v4M10 24h4M34 24h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Color Grading</h3>
+          <p class="service-desc">Cinematic color work that sets mood and enhances your visual language. From primary correction to creative LUT design.</p>
+        </div>
+
+        <div class="service-card reveal" id="service-3">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M8 36l8-8 6 6 8-12 10 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="34" cy="14" r="6" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M32 14h4M34 12v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Motion Design</h3>
+          <p class="service-desc">Titles, transitions, and motion graphics that feel native to your project. Kinetic typography, animated idents, and VFX compositing.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="section-header reveal">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's Make<br /><em>Something Great</em></h2>
+        <p class="contact-sub reveal">Available for new projects. Usually responds within 24 hours.</p>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-name">Name</label>
+            <input type="text" id="form-name" name="name" placeholder="Your name" autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email</label>
+            <input type="email" id="form-email" name="email" placeholder="your@email.com" autocomplete="off" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="form-message">Message</label>
+          <textarea id="form-message" name="message" rows="6" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
+      </form>
+
+      <div class="contact-links reveal">
+        <a href="mailto:alex@example.com" class="contact-link" id="email-link">alex@example.com</a>
+        <span class="contact-divider">·</span>
+        <a href="https://instagram.com" target="_blank" class="contact-link" id="instagram-link">Instagram</a>
+        <span class="contact-divider">·</span>
+        <a href="https://vimeo.com" target="_blank" class="contact-link" id="vimeo-link">Vimeo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Alex Morgan</span>
+      <span class="footer-copy">© 2024 — All rights reserved</span>
+      <div class="footer-links">
+        <a href="https://instagram.com" target="_blank" id="footer-ig">IG</a>
+        <a href="https://vimeo.com" target="_blank" id="footer-vimeo">Vimeo</a>
+        <a href="https://linkedin.com" target="_blank" id="footer-li">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
